@@ -29,4 +29,5 @@ char *concat_params(int argc, char **argv)
     }
     str[i - 1] = '\0';
     return str;
+    free(str);
 }
